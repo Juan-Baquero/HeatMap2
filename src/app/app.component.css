@@ -1,6 +1,31 @@
-
+@import url("https://fonts.googleapis.com/css?family=Overpass");
   .popover{
     max-width: 70%; /* Max Width of the popover (depending on the container!) */
    /*max-height:  50%;*/
    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
 }
+
+.text-muted{
+    font: normal 14px/1.5 "Overpass", sans-serif;
+    fill: #686868;
+}
+.text-bold{
+    font: normal 14px/1.5 "Overpass", sans-serif;
+    fill: #000000;
+}
+.text-less{
+    font: normal 12px/1.5 "Overpass", sans-serif;
+    fill: #686868;
+}
+.my-custom-class {
+
+    font-size: 15px ;
+    text-align:center
+ }
+  .my-custom-class .arrow::after {
+    border-top-color: aliceblue;
+  }
+  .svg-s{
+      max-width: 500px;
+  }

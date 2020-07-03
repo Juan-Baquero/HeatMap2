@@ -1,11 +1,12 @@
-<svg></svg>
+<svg class='svg-s'></svg>
 
 <ng-template #tipContent>
-  <div class="tituloBack">
-      <p class="titulo"><b>HEATMAP</b></p>
-  </div>
+ 
+  <strong text-align: center class='text-bold'>Puerto {{contenido.column}}</strong><span></span> <br/>  
+  <strong class='text-bold'>Error Accm: </strong><span class='text-muted'>{{contenido.value| number}} paquetes</span>  <br/>
+  <strong class='text-bold'>Tiempo Actividad: </strong><span class='text-muted'>{{contenido.time}} días</span>  <br/>
+
 </ng-template>
 
-<span [ngbPopover]="tipContent" #popover="ngbPopover" placement="bottom auto" [autoClose]="'outside'" triggers="manual"
-  popoverClass="my-custom-class">
+<span [ngbPopover]="tipContent" #popover="ngbPopover" placement="bottom auto" [autoClose]="'outside'" triggers="manual" popoverClass="my-custom-class">
 </span>
